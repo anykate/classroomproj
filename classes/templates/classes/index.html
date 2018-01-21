@@ -1,0 +1,11 @@
+{% extends 'classes/base.html' %}
+
+{% block title %}
+Index Page
+{% endblock %}
+
+{% block content %}
+{% for student in students %}
+    <a href="{% url 'classes:details' student.id %}"><h2>{{ student }}</h2></a><br>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'classes/base.html' %}
+
+{% block title %}
+Subject Details Page
+{% endblock %}
+
+{% block content %}
+{% for subject in subjects %}
+    <ul>
+        <li>
+            <h4>{{ subject }}</h4><br>
+        </li>
+    </ul>
+{% endfor %}
+{% endblock %}
